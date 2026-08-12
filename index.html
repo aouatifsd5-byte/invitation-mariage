@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f7f1ea">
+  <title>Notre mariage</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Écran d'ouverture -->
+  <div id="opening" class="opening">
+    <div class="opening-flower flower-left">✿</div>
+    <div class="opening-content">
+      <p class="small-title">UNE INVITATION POUR VOUS</p>
+      <button id="envelope" class="envelope" aria-label="Ouvrir l'invitation">
+        <span class="envelope-back"></span>
+        <span class="letter">
+          <span>Vous êtes<br>invité(e)</span>
+        </span>
+        <span class="envelope-flap"></span>
+        <span class="seal">♥</span>
+      </button>
+      <p class="hint">Touchez l'enveloppe pour ouvrir</p>
+    </div>
+    <div class="opening-flower flower-right">✿</div>
+  </div>
+
+  <main id="site" class="site hidden">
+
+    <button id="musicBtn" class="music-btn" aria-label="Activer ou couper la musique">♫</button>
+
+    <section class="hero section">
+      <div class="ornament">❦</div>
+      <p class="eyebrow">AVEC JOIE ET ÉMOTION</p>
+      <h1>Nous nous marions</h1>
+      <p class="names">Dounia <span>&</span> Tayeb</p>
+      <div class="divider">✦</div>
+      <p class="date">SAMEDI · 12 AOUT 2027</p>
+      <p class="place">Aïn Témouchent · Algérie</p>
+    </section>
+
+    <section class="section story">
+      <p class="eyebrow">NOTRE HISTOIRE</p>
+      <h2>Deux chemins,<br>une belle histoire</h2>
+      <p>
+        Il y a des rencontres qui changent une vie. Notre histoire a commencé
+        par un simple moment, puis s'est transformée en une aventure que nous
+        avons envie de partager avec vous.
+      </p>
+      <div class="heart-line">♡ ───── ♥ ───── ♡</div>
+    </section>
+
+    <section class="section countdown-section">
+      <p class="eyebrow">LE GRAND JOUR APPROCHE</p>
+      <h2>Rendez-vous dans...</h2>
+      <div class="countdown">
+        <div><strong id="days">365</strong><span>JOURS</span></div>
+        <div><strong id="hours">7</strong><span>HEURES</span></div>
+        <div><strong id="minutes">2</strong><span>MINUTES</span></div>
+        <div><strong id="seconds">0</strong><span>SECONDES</span></div>
+      </div>
+    </section>
+
+    <section class="section details">
+      <p class="eyebrow">LE JOUR DU MARIAGE</p>
+      <h2>Programme</h2>
+
+      <div class="timeline">
+        <article>
+          <span class="time">15:00</span>
+          <h3>Cérémonie</h3>
+          <p>Accueil des invités et début de la cérémonie.</p>
+        </article>
+        <article>
+          <span class="time">17:00</span>
+          <h3>Réception</h3>
+          <p>Photos, félicitations et moments de partage.</p>
+        </article>
+        <article>
+          <span class="time">19:00</span>
+          <h3>Dîner</h3>
+          <p>Un repas convivial pour célébrer ensemble.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section location">
+      <p class="eyebrow">NOUS REJOINDRE</p>
+      <h2>Le lieu</h2>
+      <p>Salle des fêtes — Aïn Témouchent</p>
+
+      <div class="map-placeholder">
+        <div class="map-pin">♥</div>
+        <p>Votre lieu apparaîtra ici</p>
+      </div>
+
+      <a class="button" href="https://www.google.com/maps/place/H%C3%B4tel+Bel+Air+2/@35.3097958,-1.1373819,18.48z/data=!4m9!3m8!1s0xd7ed3e31fc9aa49:0x9bc0139654c590fd!5m2!4m1!1i2!8m2!3d35.3098489!4d-1.1377088!16s%2Fg%2F11f0l3ytpf?entry=ttu&g_ep=EgoyMDI2MDgwOS4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener">
+        Ouvrir l'itinéraire
+      </a>
+    </section>
+
+    <section class="section dress-code">
+      <p class="eyebrow">DRESS CODE</p>
+      <h2>Élégance & simplicité</h2>
+      <p>Nous vous invitons à choisir une tenue élégante pour partager cette belle journée avec nous.</p>
+      <div class="dress-symbol">✦</div>
+    </section>
+
+    <section class="section rsvp">
+      <p class="eyebrow">VOTRE PRÉSENCE NOUS RAVIRA</p>
+      <h2>Merci de confirmer</h2>
+      <p>Nous serions très heureux de vous compter parmi nous.</p>
+      <a class="button" href="https://wa.me/" target="_blank" rel="noopener">Confirmer ma présence</a>
+    </section>
+
+    <footer>
+      <div class="ornament">❦</div>
+      <p>Dounia & Tayeb</p>
+      <small>Avec tout notre amour</small>
+    </footer>
+  </main>
+
+  <audio id="music" loop preload="none">
+    <source src="music/wedding.mp3" type="audio/mpeg">
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
